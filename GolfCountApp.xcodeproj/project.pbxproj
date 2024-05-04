@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		B36241872BE157480033A940 /* GolfCountApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B36241862BE157480033A940 /* GolfCountApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B362418C2BE157480033A940 /* GolfCountAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B362418B2BE157480033A940 /* GolfCountAppApp.swift */; };
-		B362418E2BE157480033A940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B362418D2BE157480033A940 /* ContentView.swift */; };
 		B36241902BE1574A0033A940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B362418F2BE1574A0033A940 /* Assets.xcassets */; };
 		B36241932BE1574A0033A940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36241922BE1574A0033A940 /* Preview Assets.xcassets */; };
+		B362419E2BE157DE0033A940 /* CountUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B362419D2BE157DE0033A940 /* CountUpView.swift */; };
+		B3AFD4EE2BE3C06000122CF2 /* PtO-MarukkanaS-W9_20140407.otf in Resources */ = {isa = PBXBuildFile; fileRef = B3AFD4ED2BE3C06000122CF2 /* PtO-MarukkanaS-W9_20140407.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +43,10 @@
 		B36241802BE157480033A940 /* GolfCountApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfCountApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36241862BE157480033A940 /* GolfCountApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GolfCountApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B362418B2BE157480033A940 /* GolfCountAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCountAppApp.swift; sourceTree = "<group>"; };
-		B362418D2BE157480033A940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B362418F2BE1574A0033A940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36241922BE1574A0033A940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B362419D2BE157DE0033A940 /* CountUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUpView.swift; sourceTree = "<group>"; };
+		B3AFD4ED2BE3C06000122CF2 /* PtO-MarukkanaS-W9_20140407.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PtO-MarukkanaS-W9_20140407.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +80,11 @@
 		B362418A2BE157480033A940 /* GolfCountApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B3AFD4EC2BE3C03E00122CF2 /* Fonts */,
 				B362418B2BE157480033A940 /* GolfCountAppApp.swift */,
-				B362418D2BE157480033A940 /* ContentView.swift */,
 				B362418F2BE1574A0033A940 /* Assets.xcassets */,
 				B36241912BE1574A0033A940 /* Preview Content */,
+				B362419D2BE157DE0033A940 /* CountUpView.swift */,
 			);
 			path = "GolfCountApp Watch App";
 			sourceTree = "<group>";
@@ -92,6 +95,14 @@
 				B36241922BE1574A0033A940 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3AFD4EC2BE3C03E00122CF2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B3AFD4ED2BE3C06000122CF2 /* PtO-MarukkanaS-W9_20140407.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AFD4EE2BE3C06000122CF2 /* PtO-MarukkanaS-W9_20140407.otf in Resources */,
 				B36241932BE1574A0033A940 /* Preview Assets.xcassets in Resources */,
 				B36241902BE1574A0033A940 /* Assets.xcassets in Resources */,
 			);
@@ -192,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B362418E2BE157480033A940 /* ContentView.swift in Sources */,
+				B362419E2BE157DE0033A940 /* CountUpView.swift in Sources */,
 				B362418C2BE157480033A940 /* GolfCountAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,12 +340,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfCountApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = G5AU9LVY74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = GolfCountApp;
+				INFOPLIST_FILE = "GolfCountApp-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ゴルフカウンター";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,12 +371,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfCountApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = G5AU9LVY74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = GolfCountApp;
+				INFOPLIST_FILE = "GolfCountApp-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ゴルフカウンター";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,7 +402,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = G5AU9LVY74;
 				INFOPLIST_KEY_CFBundleDisplayName = GolfCountApp;
 				MARKETING_VERSION = 1.0;
@@ -404,7 +418,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = G5AU9LVY74;
 				INFOPLIST_KEY_CFBundleDisplayName = GolfCountApp;
 				MARKETING_VERSION = 1.0;
